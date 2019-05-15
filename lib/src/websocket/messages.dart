@@ -52,7 +52,7 @@ abstract class GraphQLSocketMessage extends JsonSerializable {
 class InitOperation extends GraphQLSocketMessage {
   InitOperation(this.payload) : super(MessageTypes.GQL_CONNECTION_INIT);
 
-  final Map<String, String> payload;
+  final Map<String, dynamic> payload;
 
   @override
   dynamic toJson() {

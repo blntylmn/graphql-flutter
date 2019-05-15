@@ -60,10 +60,10 @@ class InitOperation extends GraphQLSocketMessage {
     jsonMap['type'] = type;
 
     if (payload != null) {
-      jsonMap['payload'] = json.encode(payload);
+      jsonMap['payload'] = payload;
     }
 
-    return json.encode(jsonMap);
+    return jsonMap;
   }
 }
 

@@ -40,7 +40,7 @@ class SocketClientConfig {
   final CompressionOptions compression;
 
   /// The initial payload that will be sent to the server upon connection. Can be null.
-  final Map<String, String> initPayload;
+  final Map<String, dynamic> initPayload;
 }
 
 enum SocketConnectionState { NOT_CONNECTED, CONNECTING, CONNECTED }
